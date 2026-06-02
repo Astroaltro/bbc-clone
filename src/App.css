@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'BBC Reith Sans', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.bbc-app {
+  min-height: 100vh;
+}
+
+.bbc-header {
+  background: #bb2222;
+  color: white;
+}
+
+.header-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bbc-logo .logo-text {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.bbc-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.nav-item.active {
+  border-bottom: 3px solid white;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-btn, .account-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.lang-btn {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bbc-hero {
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.hero-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.hero-main {
+  position: relative;
+}
+
+.hero-main img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-main .tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #bb2222;
+  color: white;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hero-main h1 {
+  font-size: 36px;
+  margin: 16px 0;
+  line-height: 1.2;
+}
+
+.hero-main p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.secondary-item {
+  display: flex;
+  gap: 12px;
+  background: white;
+  padding: 12px;
+}
+
+.secondary-item img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.secondary-item .tag {
+  background: #bb2222;
+  color: white;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.secondary-item h3 {
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.bbc-main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.bbc-main h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.news-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.news-card .tag {
+  background: #bb2222;
+  color: white;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 8px 0;
+}
+
+.news-card h3 {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.news-card .time {
+  color: #777;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .bbc-nav {
+    display: none;
+  }
+  
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-main img {
+    height: 250px;
+  }
+  
+  .hero-main h1 {
+    font-size: 24px;
+  }
+}
